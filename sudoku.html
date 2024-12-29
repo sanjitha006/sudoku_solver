@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudosolver</title>
+        <link rel="icon" href="Screenshot 2024-12-29 151910.png"></link>
+    </head>
+    <body bgcolor="black">
+        <h1 style="color:rgb(120, 153, 153);text-align: center;font-family: Courier">SUDOKU SOLVER</h1>
+        <center><table cellspacing="0" cellpadding="0">
+            <tr>
+                <!-- Row 1 -->
+                <td><input id="r1c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r1c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r1c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r1c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r1c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r1c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r1c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r1c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r1c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+            </tr>
+            <tr>
+                <!-- Row 2 -->
+                <td><input id="r2c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r2c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r2c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r2c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r2c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r2c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r2c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r2c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r2c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+            </tr>
+            <tr>
+                <!-- Row 3 -->
+                <td><input id="r3c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r3c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r3c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r3c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r3c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r3c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r3c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r3c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r3c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+            </tr>
+            <tr>
+                <!-- Row 4 -->
+                <td><input id="r4c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r4c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r4c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r4c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r4c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r4c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r4c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+                <td><input id="r4c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+                <td><input id="r4c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+            </tr>
+            <tr>
+                <!-- Row 5 -->
+                <td><input id="r5c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r5c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r5c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r5c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r5c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r5c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r5c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+                <td><input id="r5c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+                <td><input id="r5c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+            </tr>
+            <tr>
+                <!-- Row 6 -->
+                <td><input id="r6c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r6c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r6c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(131, 168, 203)"></td>
+                <td><input id="r6c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r6c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r6c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(185, 141, 192)"></td>
+                <td><input id="r6c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+                <td><input id="r6c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+                <td><input id="r6c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(224, 150, 166)"></td>
+            </tr>
+            <tr>
+                <!-- Row 7 -->
+                <td><input id="r7c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r7c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r7c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r7c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r7c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r7c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r7c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r7c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r7c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+            </tr>
+            <tr>
+                <!-- Row 8 -->
+                <td><input id="r8c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r8c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r8c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r8c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r8c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r8c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r8c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r8c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r8c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+            </tr>
+            <tr>
+                <!-- Row 9 -->
+                <td><input id="r9c1" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r9c2" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r9c3" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(173, 196, 218)"></td>
+                <td><input id="r9c4" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r9c5" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r9c6" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(211, 173, 218)"></td>
+                <td><input id="r9c7" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r9c8" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+                <td><input id="r9c9" type="number" min="0" max="9" style="width: 30px;height: 30px; background-color: rgb(218, 173, 183)"></td>
+            </tr>
+            </table>
+            <br>
+            <button onclick="main()" style="color:rgb(19, 18, 18);background-color:rgb(120, 153, 153);width:80px;height:40px;border-width:5px;font-size:larger">solve</button>
+        
+            <button onclick="clear_g()"style="color:rgb(19, 18, 18);background-color:rgb(120, 153, 153);width:80px;margin-left:15px;height:40px;border-width:5px;font-size:larger">clear</button>
+            <p style="color:rgb(120, 153, 153)">If it takes more than 15 seconds to load output then the sudoku is not solvable</p>
+            <h1 id="para" style="color:aliceblue"></h1>
+
+</center>
+    <script src="sudoku.js" defer></script>
+
+
+    </body>
+</html>
