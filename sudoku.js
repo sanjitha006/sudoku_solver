@@ -4,7 +4,7 @@ function clear_g(){
 p.textContent="";
 for (let i = 0; i < 9; i++) {
     for (let j = 0; j < 9; j++) {
-        document.getElementById(`r${i + 1}c${j + 1}`).value = 0;
+        document.getElementById(`r${i + 1}c${j + 1}`).value = null;
     }
 }
 }
