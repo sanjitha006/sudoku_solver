@@ -8,7 +8,7 @@ for (let i = 0; i < 9; i++) {
     }
 }
 }
-clear_g();
+//clear_g();
 function main(){
 
 function convert_input_to_grid(){
